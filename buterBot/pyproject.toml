@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "buterbot"
+version = "0.1.0"
+description = ""
+authors = ["Bojchenko-Konstantin <Bojchenko_k@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = "^21.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
