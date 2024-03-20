@@ -1,3 +1,4 @@
+from message_texts import GREETINGS
 from config import TG_TOKEN
 import logging
 from telegram import Update
@@ -19,7 +20,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not effective_chat:
         logger.warning('effective_chat is None')
         return
-    await context.bot.send_message(chat_id=effective_chat.id, text='Алейкум, ёпта')
+    await context.bot.send_message(chat_id=effective_chat.id, text=GREETINGS)
 
 if __name__=='__main__':
     application= ApplicationBuilder().token(TELEGRAM_BOT_TOKEN_TOKEN).build()
